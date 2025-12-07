@@ -329,7 +329,7 @@ body {
 }
 
 .contact-list a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* Responsive */
