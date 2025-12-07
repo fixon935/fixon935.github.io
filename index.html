@@ -4,18 +4,24 @@
   <meta charset="UTF-8" />
   <title>Pham Linh | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
 <div class="layout">
-
   <!-- SIDEBAR -->
   <aside class="sidebar">
-    <div class="avatar-box">
-      <img src="https://media.tenor.com/2uyENR6pY1kAAAAC/cat-computer.gif" class="avatar">
-      <h2>Pham Linh</h2>
-      <p>International Economics Student</p>
+    <div class="avatar-box"
+      <img src="z7210174301488_958bec32b1d76909235c8cc3ef0a5007.jpg" alt="Pham Linh" class="avatar" />
+
+      <h1 class="name">Pham Linh</h1>
+      <p class="role">International Economics Student</p>
+      <p class="school">Foreign Trade University (FTU)</p>
+
+      <!-- 3) CV: nhớ upload cv.pdf lên repo -->
+      <a href="cv.pdf" target="_blank" class="btn-secondary">
+        Download CV
+      </a>
     </div>
 
     <nav class="menu">
@@ -25,80 +31,136 @@
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
+
+    <div class="socials">
+      <a href="https://github.com/fixon935" target="_blank">GitHub</a>
+      <a href="https://www.facebook.com/pgl.595/" target="_blank">Facebook</a>
+    </div>
   </aside>
 
   <!-- MAIN CONTENT -->
   <main class="content">
-
     <!-- HERO -->
-    <section id="home" class="hero">
-      <h1>Hi, I'm <span>Pham Linh</span></h1>
-      <h3>3rd-year Student in International Economics – FTU</h3>
-      <p>
+    <section id="home" class="hero"
+      <h2 class="hero-title">I'm <span>Pham Linh</span></h2>
+      <h3 class="hero-subtitle">
+        3rd-year Student in International Economics – FTU
+      </h3>
+      <p class="hero-text">
         I am passionate about Data Analysis and Logistics & Supply Chain.
-        I enjoy working with Python, SQL and transforming data into insights
+        I enjoy working with Python and SQL, and transforming data into insights
         for business decision-making.
       </p>
-      <a href="#contact" class="btn">Contact Me</a>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View my projects</a>
+        <a href="#contact" class="btn-outline">Contact me</a>
+      </div>
     </section>
 
     <!-- ABOUT -->
     <section id="about" class="section">
-      <h2>About Me</h2>
+      <h2 class="section-title">About Me</h2>
       <p>
         I'm currently a third-year student at Foreign Trade University (FTU),
-        majoring in International Economics. I am building a strong foundation
-        in economics while developing practical skills in Python, SQL and data analysis.
-        My long-term goal is to become a Data Analyst or Business Analyst in the
-        Logistics & Supply Chain field.
+        majoring in International Economics. Besides economics, I’m building my
+        skills in data analysis with Python, SQL and Excel. My long-term goal
+        is to become a Data Analyst or Business Analyst in the Logistics &
+        Supply Chain field.
+      </p>
+      <p>
+        I enjoy studying real business problems, especially last-mile delivery
+        and supply chain operations in Vietnam, and I want to use data to make
+        these systems more efficient and customer-centric.
       </p>
     </section>
 
     <!-- SKILLS -->
     <section id="skills" class="section">
-      <h2>Skills</h2>
-      <div class="skills">
-        <span>Python</span>
-        <span>SQL</span>
-        <span>Excel</span>
-        <span>Power BI (Basic)</span>
-        <span>Logistics</span>
-        <span>Supply Chain</span>
+      <h2 class="section-title">Skills</h2>
+      <div class="chips">
+        <span class="chip">Python (Pandas – basics)</span>
+        <span class="chip">SQL</span>
+        <span class="chip">Excel</span>
+        <span class="chip">Power BI (basic)</span>
+        <span class="chip">Logistics</span>
+        <span class="chip">Supply Chain</span>
+        <span class="chip">Research & Reports</span>
       </div>
     </section>
 
     <!-- PROJECTS -->
     <section id="projects" class="section">
-      <h2>Projects</h2>
+      <h2 class="section-title">Projects</h2>
 
       <div class="projects-grid">
+        <!-- 2) PROJECT 1: sửa lại link href thành repo thật của bạn -->
+        <article class="project-card">
+          <h3 class="project-title">SQL Practice & Query Collection</h3>
+          <p class="project-desc">
+            A set of SQL exercises focusing on JOINs, CTEs and subqueries,
+            used to build a strong foundation in data querying.
+          </p>
+          <a
+            href="https://github.com/fixon935"
+            target="_blank"
+            class="project-link"
+          >
+            View on GitHub
+          </a>
+        </article>
 
-        <div class="project-card">
-          <h3>Python Data Analysis</h3>
-          <p>Basic data analysis using Pandas and Matplotlib.</p>
-        </div>
+        <!-- PROJECT 2 -->
+        <article class="project-card">
+          <h3 class="project-title">Python Data Exploration</h3>
+          <p class="project-desc">
+            Small notebooks using Python (Pandas) to clean and explore datasets,
+            calculate statistics and create simple visualizations.
+          </p>
+          <a
+            href="https://github.com/fixon935"
+            target="_blank"
+            class="project-link"
+          >
+            View on GitHub
+          </a>
+        </article>
 
-        <div class="project-card">
-          <h3>SQL Practice</h3>
-          <p>Hands-on SQL queries with JOINs, CTEs and subqueries.</p>
-        </div>
-
-        <div class="project-card">
-          <h3>Logistics Case Study</h3>
-          <p>Last-mile delivery optimization analysis.</p>
-        </div>
-
+        <!-- PROJECT 3 -->
+        <article class="project-card">
+          <h3 class="project-title">Logistics Case Study</h3>
+          <p class="project-desc">
+            Academic case study about last-mile delivery in Vietnam, analyzing
+            pain points and proposing improvements for customer experience.
+          </p>
+          <span class="project-tag">Coursework</span>
+        </article>
       </div>
     </section>
 
     <!-- CONTACT -->
     <section id="contact" class="section">
-      <h2>Contact</h2>
-      <p>Email: <b>linhpg15.chc@gmail.com</b></p>
-      <p>GitHub: <a href="https://github.com/fixon935" target="_blank">github.com/fixon935</a></p>
-      <p>Facebook: <a href="https://www.facebook.com/pgl.595/" target="_blank">Profile</a></p>
+      <h2 class="section-title">Contact</h2>
+      <p>
+        Feel free to reach out if you want to talk about data, logistics, or
+        potential opportunities 🌱
+      </p>
+      <ul class="contact-list">
+        <li><b>Email:</b> linhpg15.chc@gmail.com</li>
+        <li>
+          <b>GitHub:</b>
+          <a href="https://github.com/fixon935" target="_blank">
+            github.com/fixon935
+          </a>
+        </li>
+        <li>
+          <b>Facebook:</b>
+          <a href="https://www.facebook.com/pgl.595/" target="_blank">
+            facebook.com/pgl.595
+          </a>
+        </li>
+      </ul>
     </section>
-
   </main>
 </div>
 
